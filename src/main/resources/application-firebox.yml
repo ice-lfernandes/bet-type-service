@@ -10,9 +10,9 @@ spring:
   application:
     name: Bet-Service
   datasource:
-    url: jdbc:mysql://localhost:3306/bet_type?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=UTC
+    url: jdbc:mysql://bet-type-service-db.cp6udn78gif7.us-east-1.rds.amazonaws.com/bettypedb
     username: root
-    password: '12345678'
+    password: 'BrenoLopesERodinei'
   jpa:
     properties:
       hibernate:

@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e974aec3-1a0a-4044-9132-4834a103a916" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/totonero/bettypeservice/domain/BetDTO$BetDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/totonero/bettypeservice/domain/BetDTO$BetDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/totonero/bettypeservice/domain/BetDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/totonero/bettypeservice/domain/BetDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/totonero/bettypeservice/repository/entity/Bet$BetBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/totonero/bettypeservice/repository/entity/Bet$BetBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/totonero/bettypeservice/repository/entity/Bet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/totonero/bettypeservice/repository/entity/Bet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V10__inserts_rules_limit_second_half.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/migration/V10__inserts_rules_limit_second_half.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V1__create_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/migration/V1__create_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V2__inserts_bet.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/migration/V2__inserts_bet.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V4__inserts_rules_asiatic_first_half.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/migration/V4__inserts_rules_asiatic_first_half.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V5__inserts_rules_limit_first_half.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/migration/V5__inserts_rules_limit_first_half.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V6__inserts_rules_race7.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/migration/V6__inserts_rules_race7.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V7__inserts_rules_race9.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/migration/V7__inserts_rules_race9.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V8__inserts_rules_race9_plus.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/migration/V8__inserts_rules_race9_plus.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/db/migration/V9__inserts_rules_asiatic_second_half.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/db/migration/V9__inserts_rules_asiatic_second_half.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/domain/BetDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/domain/BetDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/repository/entity/Bet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/repository/entity/Bet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__inserts_bet.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__inserts_bet.sql" afterDir="false" />
-    </list>
+    <list default="true" id="e974aec3-1a0a-4044-9132-4834a103a916" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +20,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bet-type-service" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>

@@ -23,6 +23,7 @@ CREATE TABLE bet (
   is_able_to_close                        TINYINT(1) NOT NULL,
   maximum_check_close_minute              BIGINT NULL,
   maximum_check_close_neutral_minute      BIGINT NULL,
+  is_push                                 TINYINT(1) NOT NULL,
   UNIQUE                                  (is_first_half, name)
 );
 

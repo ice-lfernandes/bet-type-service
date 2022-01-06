@@ -1,5 +1,6 @@
+# Server Port AWS
 server:
-  port: 8070
+  port: 5000
 
 info:
   artifactId: "${project.name}"

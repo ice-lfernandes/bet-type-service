@@ -101,4 +101,7 @@ public class Bet {
 
     @Column(name = "maximum_check_close_neutral_minute")
     private Integer maximumCheckCloseNeutralMinute;
+
+    @Column(name = "is_push")
+    private Boolean isPush;
 }

@@ -24,6 +24,8 @@ CREATE TABLE bet (
   maximum_check_close_minute              BIGINT NULL,
   maximum_check_close_neutral_minute      BIGINT NULL,
   is_push                                 TINYINT(1) NOT NULL,
+  is_losing_required                      TINYINT(1) NOT NULL,
+  maximum_advantage_in_result             BIGINT NOT NULL,
   UNIQUE                                  (is_first_half, name)
 );
 

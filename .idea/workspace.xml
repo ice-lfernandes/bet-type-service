@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e974aec3-1a0a-4044-9132-4834a103a916" name="Changes" comment="" />
+    <list default="true" id="e974aec3-1a0a-4044-9132-4834a103a916" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application-firebox.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application-firebox.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/repository/RuleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/repository/RuleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/service/RuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/service/RuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/web/controller/RuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/web/controller/RuleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V10__inserts_rules_limit_second_half.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V10__inserts_limit_second_half_rules.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create_tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V3__inserts_rules_analysable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__inserts_analysis_rules.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V4__inserts_rules_asiatic_first_half.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V4__inserts_asiatic_first_half_rules.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V5__inserts_rules_limit_first_half.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V5__inserts_limit_first_half_rules.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V6__inserts_rules_race7.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V6__inserts_race7_rules.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V7__inserts_rules_race9.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V7__inserts_race9_rules.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V8__inserts_rules_race9_plus.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V8__inserts_race9_plus_rules.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V9__inserts_rules_asiatic_second_half.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V9__inserts_asiatic_second_half_rules.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,12 +91,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/db/migration" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice" />
       <recent name="$PROJECT_DIR$/src/main/java/com/totonero/bettypeservice/controller" />
     </key>
@@ -103,14 +124,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="aws.lambda" factoryName="Remote">
-      <option name="credentialProviderId" />
-      <option name="regionId" />
-      <option name="functionName" />
-      <option name="input" />
-      <option name="inputIsFile" value="false" />
-      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>

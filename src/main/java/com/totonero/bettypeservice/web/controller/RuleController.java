@@ -43,9 +43,9 @@ public class RuleController {
                 .collect(Collectors.toList());
     }
 
-    @GetMapping(path = "/analyzable", produces = APPLICATION_JSON_VALUE)
-    public List<RuleResponseDTO> findAnalyzableRules() {
-        return service.findAnalyzableRules()
+    @GetMapping(path = "/analysis", produces = APPLICATION_JSON_VALUE)
+    public List<RuleResponseDTO> findAnalysisRules() {
+        return service.findAnalysisRules()
                 .stream()
                 .map(ruleDTO -> modelMapper.map(ruleDTO, RuleResponseDTO.class))
                 .collect(Collectors.toList());

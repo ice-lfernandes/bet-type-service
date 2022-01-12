@@ -37,4 +37,6 @@ public class BetDTO {
     private Integer maximumCheckCloseMinute;
     private Integer maximumCheckCloseNeutralMinute;
     private Boolean isPush;
+    private Boolean isLosingRequired;
+    private Integer maximumAdvantageInResult;
 }

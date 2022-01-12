@@ -51,8 +51,8 @@ public class RuleService {
                 .collect(Collectors.toList());
     }
 
-    public List<RuleDTO> findAnalyzableRules() {
-        return repository.findAnalyzableRule()
+    public List<RuleDTO> findAnalysisRules() {
+        return repository.findAnalysisRules()
                 .stream()
                 .map(rule -> modelMapper.map(rule, RuleDTO.class))
                 .collect(Collectors.toList());

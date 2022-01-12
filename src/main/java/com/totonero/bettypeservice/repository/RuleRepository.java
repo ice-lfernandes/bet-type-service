@@ -22,8 +22,8 @@ public interface RuleRepository extends JpaRepository<Rule, Long> {
     List<Rule> findByBet_nameAndBet_IsFirstHalf(final String betName, final Boolean isFirstHalf);
 
     @Query("SELECT r FROM Rule r " +
-            "WHERE r.type = 'ANALYZABLE_FIXED'")
-    List<Rule> findAnalyzableRule();
+            "WHERE r.type = 'ANALYSIS'")
+    List<Rule> findAnalysisRules();
 
     List<Rule> findByBet_idAndParentId(final Long betId, final Long parentId);
 }

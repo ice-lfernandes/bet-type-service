@@ -104,4 +104,10 @@ public class Bet {
 
     @Column(name = "is_push")
     private Boolean isPush;
+
+    @Column(name = "is_losing_required")
+    private Boolean isLosingRequired;
+
+    @Column(name = "maximum_advantage_in_result")
+    private Integer maximumAdvantageInResult;
 }

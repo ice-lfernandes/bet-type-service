@@ -30,7 +30,6 @@ public class BetDTO {
     private Integer maximumGreenMinute;
     private Integer quantityToGreen;
     private Double minimumOdd;
-    private Boolean isPriority;
     private Boolean isEqual;
     private Boolean isFirstHalf;
     private Boolean isAbleToClose;

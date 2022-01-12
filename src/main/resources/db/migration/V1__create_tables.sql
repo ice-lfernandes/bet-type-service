@@ -2,7 +2,6 @@ CREATE TABLE bet (
   idt_bet                                 BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   idt_parent                              BIGINT NULL,
   idt_evict                               BIGINT NULL,
-  is_priority                             TINYINT(1) NULL,
   name                                    VARCHAR(50) NOT NULL,
   type                                    VARCHAR(50) NOT NULL,
   name_simple                             VARCHAR(50) NULL,

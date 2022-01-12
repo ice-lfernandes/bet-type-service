@@ -81,9 +81,6 @@ public class Bet {
     @Column(name = "minimum_odd")
     private Double minimumOdd;
 
-    @Column(name = "is_priority")
-    private Boolean isPriority;
-
     @OneToMany(mappedBy = "bet")
     private List<Rule> rules;
 

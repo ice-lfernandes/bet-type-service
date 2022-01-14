@@ -36,11 +36,11 @@ VALUES ((SELECT b.idt_bet FROM bet b WHERE b.name = 'RACE_9'),
 
 INSERT INTO rule(idt_bet, type, name, value, score, is_mandatory, is_mandatory_after_red_card, is_underdog_team, is_equal)
 VALUES ((SELECT b.idt_bet FROM bet b WHERE b.name = 'RACE_9'),
-'ALERT', 'RED_CARD', 1, 250, 0, 0, 1, 0);
+'ALERT', 'RED_CARD', 0, 250, 0, 0, 1, 0);
 
 INSERT INTO rule(idt_bet, type, name, value, score, is_mandatory, is_mandatory_after_red_card, is_underdog_team, is_equal)
 VALUES ((SELECT b.idt_bet FROM bet b WHERE b.name = 'RACE_9'),
-'ALERT', 'RED_CARD', 2, 350, 0, 0, 1, 0);
+'ALERT', 'RED_CARD', 1, 350, 0, 0, 1, 0);
 
 INSERT INTO rule(idt_bet, idt_parent, type, name, score)
 VALUES ((SELECT b.idt_bet FROM bet b WHERE b.name = 'RACE_9'),

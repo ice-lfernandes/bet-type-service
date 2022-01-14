@@ -1,12 +1,12 @@
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, minimum_alert_minute,
 maximum_alert_minute, maximum_entry_minute, minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd,
 type, is_equal, is_first_half, is_able_to_close, is_push, is_losing_required, maximum_advantage_in_result)
-VALUES ('ASIATIC', 0.50, 950, 1.00, 1000, 30, 32, 34, 34, 45, 2, 1.80, 'ALERT', 0, 1, 0, 1, 0, 2);
+VALUES ('ASIATIC', 0.50, 950, 1.00, 1000, 31, 33, 34, 34, 45, 2, 1.80, 'ALERT', 0, 1, 0, 1, 0, 2);
 
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, minimum_alert_minute,
 maximum_alert_minute, maximum_entry_minute, minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd,
 type, is_equal, is_first_half, is_able_to_close, is_push, is_losing_required, maximum_advantage_in_result)
-VALUES ('LIMIT', 0.50, 950, 1.00, 1000, 35, 37, 41, 39, 45, 1, 1.70, 'ALERT', 0, 1, 0, 0, 0, 2);
+VALUES ('LIMIT', 0.50, 950, 1.00, 1000, 36, 38, 41, 39, 45, 1, 1.70, 'ALERT', 0, 1, 0, 0, 0, 2);
 
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, maximum_entry_minute,
 minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd, type, is_equal, idt_parent,
@@ -34,7 +34,7 @@ VALUES ('RACE_9_PLUS', 'RACE', 9, 0.50, 950, 1.00, 1050, 80, 83, 84, 3.00, 'ALER
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, minimum_alert_minute,
 maximum_alert_minute, maximum_entry_minute, minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd,
 type, is_equal, is_first_half, is_able_to_close, is_push, is_losing_required, maximum_advantage_in_result)
-VALUES ('ASIATIC', 0.50, 950, 1.00, 1000, 80, 82, 84, 84, 90, 2, 1.80, 'ALERT', 0, 0, 0, 1, 0, 1);
+VALUES ('ASIATIC', 0.50, 950, 1.00, 1000, 81, 83, 84, 84, 90, 2, 1.80, 'ALERT', 0, 0, 0, 1, 0, 1);
 
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, minimum_alert_minute,
 maximum_alert_minute, maximum_entry_minute, minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd,

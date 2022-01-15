@@ -107,4 +107,7 @@ public class Bet {
 
     @Column(name = "maximum_advantage_in_result")
     private Integer maximumAdvantageInResult;
+
+    @Column(name = "name_balance")
+    private String nameBalance;
 }

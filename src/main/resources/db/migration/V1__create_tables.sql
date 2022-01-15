@@ -25,6 +25,7 @@ CREATE TABLE bet (
   is_push                                 TINYINT(1) NOT NULL,
   is_losing_required                      TINYINT(1) NOT NULL,
   maximum_advantage_in_result             BIGINT NOT NULL,
+  name_balance                            VARCHAR(50) NOT NULL,
   UNIQUE                                  (is_first_half, name)
 );
 

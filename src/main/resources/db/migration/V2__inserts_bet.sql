@@ -1,7 +1,7 @@
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, minimum_alert_minute,
 maximum_alert_minute, maximum_entry_minute, minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd,
 type, is_equal, is_first_half, is_able_to_close, is_push, is_losing_required, maximum_advantage_in_result, name_balance)
-VALUES ('ASIATIC', 0.50, 950, 1.00, 1000, 31, 33, 34, 34, 45, 2, 1.80, 'ALERT', 0, 1, 0, 1, 0, 2, "ASIATIC 1T");
+VALUES ('ASIATIC', 0.50, 950, 1.00, 1000, 31, 33, 35, 35, 45, 2, 1.80, 'ALERT', 0, 1, 0, 1, 0, 2, "ASIATIC 1T");
 
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, minimum_alert_minute,
 maximum_alert_minute, maximum_entry_minute, minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd,
@@ -34,7 +34,7 @@ VALUES ('RACE_9_PLUS', 'RACE', 9, 0.50, 950, 1.00, 1050, 80, 83, 84, 3.00, 'ALER
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, minimum_alert_minute,
 maximum_alert_minute, maximum_entry_minute, minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd,
 type, is_equal, is_first_half, is_able_to_close, is_push, is_losing_required, maximum_advantage_in_result, name_balance)
-VALUES ('ASIATIC', 0.50, 950, 1.00, 1000, 81, 83, 84, 84, 90, 2, 1.80, 'ALERT', 0, 0, 0, 1, 0, 1, "ASIATIC 2T");
+VALUES ('ASIATIC', 0.50, 950, 1.00, 1000, 81, 83, 85, 85, 90, 2, 1.80, 'ALERT', 0, 0, 0, 1, 0, 1, "ASIATIC 2T");
 
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, minimum_alert_minute,
 maximum_alert_minute, maximum_entry_minute, minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd,

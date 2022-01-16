@@ -2,6 +2,7 @@ package com.totonero.bettypeservice.service;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.totonero.bettypeservice.domain.BetDTO;
@@ -81,9 +82,16 @@ public class BetService {
                 .map(bet -> modelMapper.map(bet, BetDTO.class))
                 .collect(Collectors.toList());
         if (list.size() > 1) {
+            if(list.stream().allMatch(betDTO -> betDTO.getValueGreen() > 0)) {
+                return list.stream()
+                        .min(Comparator.comparingInt(i -> Math.abs(quantityCorner - (i.getValueGreen() - 3))))
+                        .get();
+            }
             return list.stream()
-                    .min(Comparator.comparingInt(i -> Math.abs(quantityCorner - (i.getValueGreen() - 3))))
-                    .get();
+                    .filter(betDTO -> betDTO.getValueGreen() > 0 &&
+                    betDTO.getValueGreen() - 2 >= quantityCorner)
+                    .findFirst()
+                    .orElseGet(() -> list.stream().filter(dto -> dto.getValueGreen() == 0).findFirst().get());
         }
         return list.stream().findFirst().orElse(null);
     }

@@ -5,8 +5,10 @@ VALUES ('ASIATIC', 0.50, 950, 1.00, 1000, 31, 33, 35, 35, 45, 2, 1.80, 'ALERT', 
 
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, minimum_alert_minute,
 maximum_alert_minute, maximum_entry_minute, minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd,
-type, is_equal, is_first_half, is_able_to_close, is_push, is_losing_required, maximum_advantage_in_result, name_balance)
-VALUES ('LIMIT', 0.50, 950, 1.00, 1000, 36, 38, 41, 39, 45, 1, 1.70, 'ALERT', 0, 1, 0, 0, 0, 2, "LIMIT 1T");
+type, is_equal, is_first_half, is_able_to_close, is_push, is_losing_required, maximum_advantage_in_result, name_balance,
+idt_evict, negative_score_evict_is_push)
+VALUES ('LIMIT', 0.50, 950, 1.00, 1000, 36, 38, 41, 39, 45, 1, 1.70, 'ALERT', 0, 1, 0, 0, 0, 2, "LIMIT 1T",
+(SELECT b.idt_bet FROM bet b WHERE b.name = 'ASIATIC' AND b.is_first_half IS TRUE), -150);
 
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, maximum_entry_minute,
 minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd, type, is_equal, idt_parent,
@@ -38,8 +40,10 @@ VALUES ('ASIATIC', 0.50, 950, 1.00, 1000, 81, 83, 85, 85, 90, 2, 1.80, 'ALERT', 
 
 INSERT INTO bet(name, minimum_unity, minimum_score, unit, score, minimum_alert_minute,
 maximum_alert_minute, maximum_entry_minute, minimum_green_minute, maximum_green_minute, quantity_to_green, minimum_odd,
-type, is_equal, is_first_half, is_able_to_close, is_push, is_losing_required, maximum_advantage_in_result, name_balance)
-VALUES ('LIMIT', 0.50, 950, 1.00, 1000, 85, 87, 91, 88, 90, 1, 1.70, 'ALERT', 0, 0, 0, 0, 0, 1, "LIMIT 2T");
+type, is_equal, is_first_half, is_able_to_close, is_push, is_losing_required, maximum_advantage_in_result, name_balance,
+idt_evict, negative_score_evict_is_push)
+VALUES ('LIMIT', 0.50, 950, 1.00, 1000, 85, 87, 91, 88, 90, 1, 1.70, 'ALERT', 0, 0, 0, 0, 0, 1, "LIMIT 2T",
+(SELECT b.idt_bet FROM bet b WHERE b.name = 'ASIATIC' AND b.is_first_half IS FALSE), -150);
 
 INSERT INTO bet(name, name_simple, value_green, minimum_unity, minimum_score, unit, score, maximum_entry_minute,
 minimum_odd, type, is_equal, idt_parent, is_first_half, is_able_to_close, is_push, is_losing_required,

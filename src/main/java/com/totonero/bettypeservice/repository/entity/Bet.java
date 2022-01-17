@@ -110,4 +110,7 @@ public class Bet {
 
     @Column(name = "name_balance")
     private String nameBalance;
+
+    @Column(name = "negative_score_evict_is_push")
+    private Integer negativeScoreEvictIsPush;
 }

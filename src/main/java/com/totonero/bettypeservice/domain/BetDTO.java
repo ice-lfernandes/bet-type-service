@@ -39,4 +39,5 @@ public class BetDTO {
     private Boolean isLosingRequired;
     private Integer maximumAdvantageInResult;
     private String nameBalance;
+    private Integer negativeScoreEvictIsPush;
 }

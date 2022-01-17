@@ -8,7 +8,6 @@ import java.util.Objects;
 import com.totonero.bettypeservice.domain.BetDTO;
 import com.totonero.bettypeservice.service.BetService;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,9 +28,9 @@ public class BetController {
 
     @GetMapping(path = "/alert", produces = APPLICATION_JSON_VALUE)
     public ResponseEntity<BetDTO> findAlertBet(@RequestParam("minute") final Integer minute,
-                                        @RequestParam("quantityCorner") final Integer quantityCorner) {
+                                               @RequestParam("quantityCorner") final Integer quantityCorner) {
         final BetDTO betDTO = service.findAlertBetByMinute(minute, quantityCorner);
-        if(Objects.isNull(betDTO)) {
+        if (Objects.isNull(betDTO)) {
             return ResponseEntity.ok(null);
         }
         return ResponseEntity.ok(betDTO);

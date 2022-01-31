@@ -86,11 +86,10 @@ public class BetService {
                         .min(Comparator.comparingInt(i -> Math.abs(quantityCorner - (i.getValueGreen() - 3))))
                         .get();
             }
-            return list.stream()
-                    .filter(betDTO -> betDTO.getValueGreen() > 0 &&
-                    betDTO.getValueGreen() - 2 >= quantityCorner)
-                    .findFirst()
-                    .orElseGet(() -> list.stream().filter(dto -> dto.getValueGreen() == 0).findFirst().get());
+            if(quantityCorner.equals(7)) {
+                return list.stream().filter(betDTO -> betDTO.getValueGreen() > 0).findFirst().get();
+            }
+            return list.stream().filter(dto -> dto.getValueGreen() == 0).findFirst().get();
         }
         return list.stream().findFirst().orElse(null);
     }

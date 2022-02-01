@@ -1,5 +1,5 @@
 server:
-  port: 8070
+  port: 5000
 
 info:
   artifactId: "${project.name}"
@@ -9,9 +9,9 @@ spring:
   application:
     name: Bet-Service
   datasource:
-    url: jdbc:mysql://localhost:3306/bet_type?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=UTC
+    url: jdbc:mysql://bet-service-database.cksw6zblgipq.us-east-1.rds.amazonaws.com/betdb
     username: root
-    password: '12345678'
+    password: 'BrenoLopesERodinei'
   jpa:
     properties:
       hibernate:

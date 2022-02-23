@@ -25,6 +25,7 @@ public interface BetRepository extends JpaRepository<Bet, Long> {
     @Query("SELECT b FROM Bet b " +
             "WHERE b.maximumAlertMinute >= ?1 " +
             "AND b.minimumAlertMinute <= ?1 " +
-            "AND b.type = 'ALERT'")
+            "AND b.type = 'ALERT' " +
+            "AND b.isEnabled IS TRUE")
     List<Bet> findByAlertMinute(final Integer minute);
 }

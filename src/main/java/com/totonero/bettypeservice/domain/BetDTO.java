@@ -40,4 +40,7 @@ public class BetDTO {
     private Integer maximumAdvantageInResult;
     private String nameBalance;
     private Integer negativeScoreEvictIsPush;
+    private Boolean isPlus;
+    private Boolean isEnabled;
+    private Double automationLine;
 }

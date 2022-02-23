@@ -27,6 +27,9 @@ CREATE TABLE bet (
   maximum_advantage_in_result             BIGINT NOT NULL,
   name_balance                            VARCHAR(50) NOT NULL,
   negative_score_evict_is_push            BIGINT NULL,
+  automation_line                         DECIMAL(4,2) NOT NULL,
+  is_plus                                 TINYINT(1) NOT NULL,
+  is_enabled                              TINYINT(1) NOT NULL,
   UNIQUE                                  (is_first_half, name)
 );
 

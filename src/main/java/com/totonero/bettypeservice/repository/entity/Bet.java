@@ -113,4 +113,13 @@ public class Bet {
 
     @Column(name = "negative_score_evict_is_push")
     private Integer negativeScoreEvictIsPush;
+
+    @Column(name = "is_plus")
+    private Boolean isPlus;
+
+    @Column(name = "is_enabled")
+    private Boolean isEnabled;
+
+    @Column(name = "automation_line")
+    private Double automationLine;
 }

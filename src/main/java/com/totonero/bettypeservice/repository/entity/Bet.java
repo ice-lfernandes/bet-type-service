@@ -122,4 +122,7 @@ public class Bet {
 
     @Column(name = "automation_line")
     private Double automationLine;
+
+    @Column(name = "minute_corner_to_cancel_entry")
+    private Integer minuteCornerToCancelEntry;
 }

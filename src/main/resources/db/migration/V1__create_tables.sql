@@ -30,6 +30,7 @@ CREATE TABLE bet (
   automation_line                         DECIMAL(4,2) NOT NULL,
   is_plus                                 TINYINT(1) NOT NULL,
   is_enabled                              TINYINT(1) NOT NULL,
+  minute_corner_to_cancel_entry           BIGINT NULL,
   UNIQUE                                  (is_first_half, name)
 );
 

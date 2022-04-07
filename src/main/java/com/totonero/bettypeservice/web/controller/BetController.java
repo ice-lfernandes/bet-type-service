@@ -36,6 +36,16 @@ public class BetController {
         return ResponseEntity.ok(betDTO);
     }
 
+    @GetMapping(path = "/dash", produces = APPLICATION_JSON_VALUE)
+    public ResponseEntity<BetDTO> findDashBet(@RequestParam("minute") final Integer minute,
+                                              @RequestParam("quantityCorner") final Integer quantityCorner) {
+        final BetDTO betDTO = service.findDashBetByMinute(minute, quantityCorner);
+        if (Objects.isNull(betDTO)) {
+            return ResponseEntity.ok(null);
+        }
+        return ResponseEntity.ok(betDTO);
+    }
+
     @GetMapping(path = "/{id}/alert", produces = APPLICATION_JSON_VALUE)
     public BetDTO findAlertBetById(@PathVariable("id") final Long id) {
         return service.findAlertBetById(id);

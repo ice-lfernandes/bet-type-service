@@ -125,4 +125,10 @@ public class Bet {
 
     @Column(name = "minute_corner_to_cancel_entry")
     private Integer minuteCornerToCancelEntry;
+
+    @Column(name = "minimum_dash_minute")
+    private Integer minimumDashMinute;
+
+    @Column(name = "maximum_dash_minute")
+    private Integer maximumDashMinute;
 }

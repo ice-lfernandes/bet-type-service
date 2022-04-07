@@ -81,15 +81,41 @@ public class BetService {
                 .map(bet -> modelMapper.map(bet, BetDTO.class))
                 .collect(Collectors.toList());
         if (list.size() > 1) {
-            if(list.stream().allMatch(betDTO -> betDTO.getValueGreen() > 0)) {
+            if (quantityCorner == 4 || quantityCorner == 5) {
                 return list.stream()
-                        .min(Comparator.comparingInt(i -> Math.abs(quantityCorner - (i.getValueGreen() - 3))))
-                        .get();
+                        .filter(betDTO -> betDTO.getValueGreen() == 7)
+                        .findFirst()
+                        .orElse(null);
             }
-            if(quantityCorner.equals(7)) {
-                return list.stream().filter(betDTO -> betDTO.getValueGreen() > 0).findFirst().get();
+            if (quantityCorner == 6 || quantityCorner == 7) {
+                return list.stream()
+                        .filter(betDTO -> betDTO.getValueGreen() == 9)
+                        .findFirst()
+                        .orElse(null);
             }
-            return list.stream().filter(dto -> dto.getValueGreen() == 0).findFirst().get();
+            return list.stream().filter(dto -> dto.getIsEqual().equals(Boolean.FALSE)).findFirst().orElse(null);
+        }
+        return list.stream().findFirst().orElse(null);
+    }
+
+    public BetDTO findDashBetByMinute(final Integer minute, final Integer quantityCorner) {
+        final List<BetDTO> list = repository.findByDashMinute(minute).stream()
+                .map(bet -> modelMapper.map(bet, BetDTO.class))
+                .collect(Collectors.toList());
+        if (list.size() > 1) {
+            if (quantityCorner == 4 || quantityCorner == 5) {
+                return list.stream()
+                        .filter(betDTO -> betDTO.getValueGreen() == 7)
+                        .findFirst()
+                        .orElse(null);
+            }
+            if (quantityCorner == 6 || quantityCorner == 7) {
+                return list.stream()
+                        .filter(betDTO -> betDTO.getValueGreen() == 9)
+                        .findFirst()
+                        .orElse(null);
+            }
+            return list.stream().filter(dto -> dto.getIsEqual().equals(Boolean.FALSE)).findFirst().orElse(null);
         }
         return list.stream().findFirst().orElse(null);
     }

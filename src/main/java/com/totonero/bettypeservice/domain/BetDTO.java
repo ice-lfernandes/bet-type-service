@@ -44,4 +44,6 @@ public class BetDTO {
     private Boolean isEnabled;
     private Double automationLine;
     private Integer minuteCornerToCancelEntry;
+    private Integer minimumDashMinute;
+    private Integer maximumDashMinute;
 }
